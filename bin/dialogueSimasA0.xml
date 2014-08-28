@@ -1,0 +1,56 @@
+<!--
+//tag A: local do diálogo
+//tag A1: nível de humor
+//
+
+http://www.loiane.com/2009/03/como-criar-um-documento-xml-introducao-ao-xml-parte-iii/
+-->
+<?xml version="1.0" encoding="utf-8"?>
+<dialogueSimasA0>
+	<area name="ruaA">
+		<humor level="normal">
+			<dialog id="0" type="default" animationState="0" humourLevel="holds" sndFx="none">
+				<text>Não posso conversar agora, tenho que ajudar meu pai com o trabalho.</text>
+			</dialog>
+			<dialog id="1" type="default" animationState="0" humourLevel="holds" sndFx="none">
+				<text>Não seja insistente.</text>
+			</dialog>
+			<dialog id="2" type="default" animationState="-1" humourLevel="decreases" sndFx="none">
+				<text>Você tá me irritando cara!</text>
+			</dialog>
+			<dialog id="3" type="option" animationState="-2" humourLevel="holds" sndFx="bgm1,repeat">
+				<text>É tão importante assim o que você quer me falar? Pois senão for, se prepare para ser mandado para longe!</text>
+				<options avatarAnimationState="fear,brave">
+					<option id="0" visible="true">Não, conversamos outra hora.</option>
+					<option id="1" visible="true">Sim, é melhor me ouvir agora.</option>
+				</options>
+				<dialog id="3.0" type="default" animationState="-2" humourLevel="holds" sndFx="none">
+					<text>Parece que finalmente você entendeu!</text>
+					<!-- Fim de fluxo -->
+				</dialog>
+				<dialog id="3.1" type="option" animationState="-2" humourLevel="holds" sndFx="bgm2,repeat">
+					<text>Anda! Desembucha! Você tem poucos segundos antes da minha mão estalar na sua cara!</text>
+					<options avatarAnimationState="fear2,brave2">
+						<option id="0" visible="true">Preciso te contar a piada da cigarra muambeira!</option>
+						<option id="1" visible="false">É sobre o [colocar código relacionado ao seu sonho musical]</option>
+						<option id="2" visible="true">É que eu penso que vocês estão demorando muito para terminar essa obra.</option>
+						<option id="3" visible="true">Não seria hora de descansar um pouco?</option>
+						<option id="4" visible="true">Você não parece muito feliz fazendo o que está fazendo...</option>
+					</options>
+					<dialog id="3.1.0" type="default" animationState="-3" humourLevel="decreases" sndFx="none">
+						<text><![CDATA[AAAAAAAAAHHHHH! SEU #$@##$@! TÁ ACHANDO QUE EU TÔ DE BRINCADEIRA?]]></text>
+						<!-- 
+							Em seguida, ele dispara o braço em direção ao rosto do avatar, mas antes de acertá-lo seu pai grita: SIMAS! PARE AGORA COM ISSO E VÁ TRABALHAR NA ÁREA INTERNA!
+							Simas sai enfurecido e volta a trabalhar na parte interna.
+								Humorímetro decresce ficando no estado de Furioso.
+								O avatar não consegue mais conversar com o personagem naquele dia.
+						4-B-a2) Fim do fluxo.
+						Fim de fluxo -->
+						<endMotion></endMotion>
+						<!-- Fim de fluxo -->
+					</dialog>
+				</dialog>
+			</dialog>
+		</humor>
+	</area>
+</dialogueSimasA0>

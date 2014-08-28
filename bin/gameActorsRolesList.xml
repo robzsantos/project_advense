@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+//tag A: local do diálogo
+//tag A1: nível de humor
+//
+
+http://www.loiane.com/2009/03/como-criar-um-documento-xml-introducao-ao-xml-parte-iii/
+-->
+<!-- verificar se necessário inserir goal="changeScreen" na declaração do botão -->
+<actorsRoles>
+	<actor name="actBtn_1" type="button" id="1">
+		<actionRole id="1" goal="changeScene"><![CDATA[vai para type="scene_residential_street" id="1"]]></actionRole>
+	</actor>
+	<actor name="actBtn_2" type="button" id="2">
+		<actionRole id="1"><![CDATA[vai para type="scene_restaurant" id="2"]]></actionRole>
+	</actor>
+	<actor name="actBtn_3" type="button" id="3">
+		<actionRole id="1"><![CDATA[vai para type="scene_shopping_street" id="3"]]></actionRole>
+	</actor>
+	<actor name="actInter_1" type="interactive_element" id="4">
+		<actionRole id="1">temp</actionRole>
+	</actor>
+	<actor name="actPl_1" type="player" id="5">
+		<!--  triggerId1="37,39" triggerType1="keyboard" triggerState1="press" 
+			   triggerId1="37,39" triggerType1="keyboard" triggerState1="release"  -->
+		<actionRole id="1">idle</actionRole>
+		<actionRole id="2">tired</actionRole>
+		<actionRole id="3">askAttention1</actionRole>
+		<actionRole id="4">askAttention2</actionRole>
+		<actionRole id="5">walk</actionRole>
+		<actionRole id="6">fear1</actionRole>
+		<actionRole id="7">fear2</actionRole>
+		<actionRole id="8">brave1</actionRole>
+		<actionRole id="9">brave2</actionRole>
+		<!--Na sequencia de ações do mc no Flash-->
+	</actor>
+	<actor name="actNPC_1" type="npc" id="6">
+		<actionRole id="1">work</actionRole>
+	</actor>
+	<actor name="actNPC_2" type="npc" id="7">
+		<actionRole id="1">work</actionRole>
+	</actor>
+<!--
+			<dialog id="0" type="default" animationState="0" humourLevel="holds" sndFx="none">
+				<text>Não posso conversar agora, tenho que ajudar meu pai com o trabalho.</text>
+			</dialog>
+			<dialog id="1" type="default" animationState="0" humourLevel="holds" sndFx="none">
+				<text>Não seja insistente.</text>
+			</dialog>
+			<dialog id="2" type="default" animationState="-1" humourLevel="decreases" sndFx="none">
+				<text>Você tá me irritando cara!</text>
+			</dialog>
+			<dialog id="3" type="option" animationState="-2" humourLevel="holds" sndFx="bgm1,repeat">
+				<text>É tão importante assim o que você quer me falar? Pois senão for, se prepare para ser mandado para longe!</text>
+				<options avatarAnimationState="fear,brave">
+					<option id="0" visible="true">Não, conversamos outra hora.</option>
+					<option id="1" visible="true">Sim, é melhor me ouvir agora.</option>
+				</options>
+				<dialog id="3.0" type="default" animationState="-2" humourLevel="holds" sndFx="none">
+					<text>Parece que finalmente você entendeu!</text>
+				</dialog>
+				<dialog id="3.1" type="option" animationState="-2" humourLevel="holds" sndFx="bgm2,repeat">
+					<text>Anda! Desembucha! Você tem poucos segundos antes da minha mão estalar na sua cara!</text>
+					<options avatarAnimationState="fear2,brave2">
+						<option id="0" visible="true">Preciso te contar a piada da cigarra muambeira!</option>
+						<option id="1" visible="false">É sobre o [colocar código relacionado ao seu sonho musical]</option>
+						<option id="2" visible="true">É que eu penso que vocês estão demorando muito para terminar essa obra.</option>
+						<option id="3" visible="true">Não seria hora de descansar um pouco?</option>
+						<option id="4" visible="true">Você não parece muito feliz fazendo o que está fazendo...</option>
+					</options>
+					<dialog id="3.1.0" type="default" animationState="-3" humourLevel="decreases" sndFx="none">
+						<text><![CDATA[AAAAAAAAAHHHHH! SEU #$@##$@! TÁ ACHANDO QUE EU TÔ DE BRINCADEIRA?]]></text>
+						<endMotion></endMotion>
+					</dialog>
+				</dialog>
+			</dialog>
+		</humor>
+	</area>-->
+</actorsRoles>
